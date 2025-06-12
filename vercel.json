@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "collobrative.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "collobrative.py"
+    }
+  ]
+}
