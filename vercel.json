@@ -1,14 +1,12 @@
 {
+  "version": 2,
   "builds": [
-    {
-      "src": "app/collobrative.py",
-      "use": "@vercel/python"
-    }
+    { "src": "collobrative.py", "use": "@vercel/python" }
   ],
   "routes": [
-    {
-      "src": "app/(.*)",
-      "dest": "app/collobrative.py"
-    }
+    { "src": "/(.*)", "dest": "/collobrative.py" }
   ],
+  "env": {
+    "APP_MODULE": "collobrative:app"
+  }
 }
